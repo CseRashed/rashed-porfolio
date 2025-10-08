@@ -28,7 +28,16 @@ export default function Home() {
 
         {/* Buttons & Socials */}
         <motion.div className="flex flex-col sm:flex-row items-center sm:items-start mt-4 gap-6" variants={item}>
-          <motion.button className="bg-gradient-to-r from-[#1fcaff] to-[#0ea5e9] text-white font-bold px-6 py-3 rounded-2xl shadow-lg hover:scale-105 hover:shadow-[#1fcaff]/50 transition-all duration-300" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>Download CV</motion.button>
+         <motion.a
+  href="/Rashedul Islam Resume.pdf"
+  download
+  className="bg-gradient-to-r from-[#1fcaff] to-[#0ea5e9] text-white font-bold px-6 py-3 rounded-2xl shadow-lg hover:scale-105 hover:shadow-[#1fcaff]/50 transition-all duration-300 inline-block"
+  whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.95 }}
+>
+  Download CV
+</motion.a>
+
           <div className="flex gap-4">
             {[IoLogoGithub, FaLinkedinIn, FaTwitter].map((Icon, i) => (
               <motion.a key={i} href="#" className="border border-[#1fcaff] text-[#1fcaff] p-3 rounded-full text-xl hover:bg-[#1fcaff] hover:text-white transition duration-300" whileHover={{ scale: 1.2 }}>
