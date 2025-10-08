@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
-import Klypto from "../../assets/projects_img/Klypto.png";
+import klypto from "../../assets/projects_img/klypto.png";
 import smart_mess from "../../assets/projects_img/smart_mess.png";
 
 const projects = [
@@ -11,7 +11,7 @@ const projects = [
       "A Platform where sellers list products and admin Manages operations, built as a role-based eCommerce system.",
     link: "https://klypto-ecommerce.netlify.app",
     tech: ["React", "Tailwind", "Firebase", "Framer Motion"],
-    img: Klypto,
+    img: klypto,
   },
   {
     title: "Smart Mess Management",
