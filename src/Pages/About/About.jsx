@@ -26,7 +26,7 @@ export default function About() {
   const item = { hidden: { opacity: 0, y: 30 }, show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } } };
 
   return (
-    <div className='min-h-screen p-4 lg:p-16  space-y-16'>
+    <div className='min-h-screen p-4 lg:p-16 space-y-16'>
 
       {/* Intro */}
       <motion.div className='flex flex-col-reverse lg:flex-row justify-between items-center gap-8' initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.3 }} variants={container}>
@@ -39,28 +39,54 @@ export default function About() {
           </p>
 
           <div className='flex flex-col sm:flex-row items-center sm:items-start mt-4 gap-6'>
+            {/* ✅ Download CV Button */}
             <motion.a
-  href="/Rashedul Islam Resume.pdf"
-  download
-  className="bg-gradient-to-r from-[#1fcaff] to-[#0ea5e9] text-white font-bold px-6 py-3 rounded-2xl shadow-lg hover:scale-105 hover:shadow-[#1fcaff]/50 transition-all duration-300 inline-block"
-  whileHover={{ scale: 1.1 }}
-  whileTap={{ scale: 0.95 }}
->
-  Download CV
-</motion.a>
+              href="/Rashedul Islam Resume.pdf"
+              download
+              className="bg-gradient-to-r from-[#1fcaff] to-[#0ea5e9] text-white font-bold px-6 py-3 rounded-2xl shadow-lg hover:scale-105 hover:shadow-[#1fcaff]/50 transition-all duration-300 inline-block"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Download CV
+            </motion.a>
 
+            {/* ✅ Social Links */}
             <div className='flex gap-4'>
-              {[IoLogoGithub, FaLinkedinIn, FaTwitter].map((Icon, i) => (
-                <motion.a key={i} href="#" className='border border-[#1fcaff] text-[#1fcaff] p-3 rounded-full text-xl hover:bg-[#1fcaff] hover:text-white transition duration-300' whileHover={{ scale: 1.2 }}>
-                  <Icon />
-                </motion.a>
-              ))}
+              <motion.a
+                href="https://github.com/cserashed"
+                target="_blank"
+                rel="noopener noreferrer"
+                className='border border-[#1fcaff] text-[#1fcaff] p-3 rounded-full text-xl hover:bg-[#1fcaff] hover:text-white transition duration-300'
+                whileHover={{ scale: 1.2 }}
+              >
+                <IoLogoGithub />
+              </motion.a>
+
+              <motion.a
+                href="https://www.linkedin.com/in/cserashedul?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className='border border-[#1fcaff] text-[#1fcaff] p-3 rounded-full text-xl hover:bg-[#1fcaff] hover:text-white transition duration-300'
+                whileHover={{ scale: 1.2 }}
+              >
+                <FaLinkedinIn />
+              </motion.a>
+
+              <motion.a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                className='border border-[#1fcaff] text-[#1fcaff] p-3 rounded-full text-xl hover:bg-[#1fcaff] hover:text-white transition duration-300'
+                whileHover={{ scale: 1.2 }}
+              >
+                <FaTwitter />
+              </motion.a>
             </div>
           </div>
         </motion.div>
 
         <motion.div className="flex justify-center lg:justify-end" variants={item}>
-          <motion.img className="w-48 sm:w-64 lg:w-80 h-48 sm:h-64 lg:h-80 border-4 border-[#1fcaff] rounded-full shadow-xl object-cover" src={img} alt="Rashedul Islam" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.8 }}/>
+          <motion.img className="w-48 sm:w-64 lg:w-80 h-48 sm:h-64 lg:h-80 border-4 border-[#1fcaff] rounded-full shadow-xl object-cover" src={img} alt="Rashedul Islam" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.8 }} />
         </motion.div>
       </motion.div>
 
@@ -80,7 +106,7 @@ export default function About() {
                     </linearGradient>
                   </defs>
                   <circle cx="18" cy="18" r="15.9155" fill="none" stroke="#e5e7eb" strokeWidth="4" />
-                  <motion.circle cx="18" cy="18" r="15.9155" fill="none" stroke={`url(#grad${idx})`} strokeWidth="4" strokeDasharray="100" strokeDashoffset="100" animate={{ strokeDashoffset: 100 - skill.value }} transition={{ duration: 1.5, delay: idx * 0.3 }} strokeLinecap="round"/>
+                  <motion.circle cx="18" cy="18" r="15.9155" fill="none" stroke={`url(#grad${idx})`} strokeWidth="4" strokeDasharray="100" strokeDashoffset="100" animate={{ strokeDashoffset: 100 - skill.value }} transition={{ duration: 1.5, delay: idx * 0.3 }} strokeLinecap="round" />
                 </svg>
                 <div className='absolute inset-0 flex items-center justify-center text-gray-900 font-bold text-lg'>{skill.value}%</div>
               </div>

@@ -10,13 +10,13 @@ export default function Home() {
 
   return (
     <div className="min-h-screen px-4 lg:px-16 py-5 flex flex-col-reverse lg:flex-row items-center lg:items-start gap-12">
-      
+
       {/* Text Section */}
-      <motion.div 
+      <motion.div
         className="lg:w-2/3 space-y-6 text-center lg:text-left"
-        initial="hidden" 
-        whileInView="show" 
-        viewport={{ once: true, amount: 0.3 }} 
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
         variants={container}
       >
         <motion.h1 className="text-gray-900 text-2xl sm:text-3xl font-bold" variants={item}>Hello, I'm</motion.h1>
@@ -28,32 +28,57 @@ export default function Home() {
 
         {/* Buttons & Socials */}
         <motion.div className="flex flex-col sm:flex-row items-center sm:items-start mt-4 gap-6" variants={item}>
-         <motion.a
-  href="/Rashedul Islam Resume.pdf"
-  download
-  className="bg-gradient-to-r from-[#1fcaff] to-[#0ea5e9] text-white font-bold px-6 py-3 rounded-2xl shadow-lg hover:scale-105 hover:shadow-[#1fcaff]/50 transition-all duration-300 inline-block"
-  whileHover={{ scale: 1.1 }}
-  whileTap={{ scale: 0.95 }}
->
-  Download CV
-</motion.a>
+          <motion.a
+            href="/Rashedul Islam Resume.pdf"
+            download
+            className="bg-gradient-to-r from-[#1fcaff] to-[#0ea5e9] text-white font-bold px-6 py-3 rounded-2xl shadow-lg hover:scale-105 hover:shadow-[#1fcaff]/50 transition-all duration-300 inline-block"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Download CV
+          </motion.a>
 
-          <div className="flex gap-4">
-            {[IoLogoGithub, FaLinkedinIn, FaTwitter].map((Icon, i) => (
-              <motion.a key={i} href="#" className="border border-[#1fcaff] text-[#1fcaff] p-3 rounded-full text-xl hover:bg-[#1fcaff] hover:text-white transition duration-300" whileHover={{ scale: 1.2 }}>
-                <Icon />
-              </motion.a>
-            ))}
+          {/* ✅ Social Links */}
+          <div className='flex gap-4'>
+            <motion.a
+              href="https://github.com/cserashed"
+              target="_blank"
+              rel="noopener noreferrer"
+              className='border border-[#1fcaff] text-[#1fcaff] p-3 rounded-full text-xl hover:bg-[#1fcaff] hover:text-white transition duration-300'
+              whileHover={{ scale: 1.2 }}
+            >
+              <IoLogoGithub />
+            </motion.a>
+
+            <motion.a
+              href="https://www.linkedin.com/in/cserashedul?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className='border border-[#1fcaff] text-[#1fcaff] p-3 rounded-full text-xl hover:bg-[#1fcaff] hover:text-white transition duration-300'
+              whileHover={{ scale: 1.2 }}
+            >
+              <FaLinkedinIn />
+            </motion.a>
+
+            <motion.a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              className='border border-[#1fcaff] text-[#1fcaff] p-3 rounded-full text-xl hover:bg-[#1fcaff] hover:text-white transition duration-300'
+              whileHover={{ scale: 1.2 }}
+            >
+              <FaTwitter />
+            </motion.a>
           </div>
         </motion.div>
       </motion.div>
 
       {/* Image Section */}
-      <motion.div 
+      <motion.div
         className="lg:w-1/3 flex justify-center lg:justify-end mb-8 lg:mb-0"
-        initial="hidden" 
-        whileInView="show" 
-        viewport={{ once: true, amount: 0.3 }} 
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
         variants={container}
       >
         <motion.img
