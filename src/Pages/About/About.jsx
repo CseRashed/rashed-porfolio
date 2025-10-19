@@ -47,7 +47,7 @@ export default function About() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              Download CV
+              Download Resume
             </motion.a>
 
             {/* ✅ Social Links */}
