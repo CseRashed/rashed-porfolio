@@ -1,16 +1,67 @@
-# React + Vite
+<h1 align="center">🌐 Rashedul Islam - Frontend Developer Portfolio</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  A modern and fully responsive <b>personal portfolio website</b> built using <b>React, Tailwind CSS, and Framer Motion</b>.  
+  This portfolio showcases my frontend development skills, projects, and professional profile in a clean and interactive UI.
+</p>
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo  
+🔗 **Live Site:** [Visit Portfolio](https://rashed-web-dev.netlify.app)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🖥️ Features  
 
-## Expanding the ESLint configuration
+✨ **Modern UI/UX** – Clean, minimal, and elegant interface.  
+📱 **Fully Responsive** – Looks great on mobile, tablet, and desktop.  
+⚡ **Fast Performance** – Powered by Vite for lightning-fast builds.  
+🎨 **Beautiful Animations** – Framer Motion for smooth and subtle animations.  
+🧠 **Dynamic Skills Section** – Animated skill progress circles.  
+🧾 **Downloadable CV** – Instantly download the resume as PDF.  
+🔗 **Social Links** – Integrated GitHub, LinkedIn, and Twitter icons.  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Technologies Used  
+
+| Category | Tools / Libraries |
+|-----------|------------------|
+| 💻 **Frontend** | React.js |
+| 🎨 **Styling** | Tailwind CSS |
+| 🌀 **Animations** | Framer Motion |
+| 🔧 **Icons** | React Icons |
+| ⚙️ **Build Tool** | Vite |
+| ☁️ **Deployment** | Netlify / GitHub Pages |
+
+---
+
+## 📂 Folder Structure  
+
+```bash
+📦 portfolio/
+├── 📁 src/
+│   ├── 📁 assets/          # Images, icons, resume files
+│   ├── 📁 components/      # Reusable components (Navbar, Footer, etc.)
+│   ├── 📁 pages/           # About, Projects, Contact, etc.
+│   ├── App.jsx             # Main application file
+│   ├── main.jsx            # Entry point
+│   └── index.css           # Tailwind configuration
+├── 📄 index.html
+├── 📄 package.json
+├── 📄 tailwind.config.js
+├── 📄 vite.config.js
+└── 📄 README.md
+
+# 1️⃣ Clone the repository
+git clone https://github.com/cserashed/rashed-portfolio.git
+
+# 2️⃣ Navigate to the project directory
+cd rashed-portfolio
+
+# 3️⃣ Install dependencies
+npm install
+
+# 4️⃣ Start the development server
+npm run dev
